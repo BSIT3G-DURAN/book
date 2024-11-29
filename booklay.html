@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>CMU online library</title>
+    <link rel="stylesheet" href="CSS/booklaydesign.css">
+    <link rel="stylesheet" href="CSS/sidebar.css">
+    <link rel="stylesheet" href="CSS/pop.css">
+</head> 
+<body>
+
+        <!-- <div class="header">
+            <img src="pics/clonepage.png" class="imagehead">
+            
+        </div> -->
+        
+        <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+                   
+          <ul class="sidebar" id="sidebar">
+            
+      <li><a class="a-bar"href="#">Books</a></li>
+      <li><a class="a-bar"href="#">Visit Library</a></li>
+      <li><a class="a-bar"href="#">Rules and Regulations</a></li>
+      <li><a class="a-bar"href="table.html">Library Records</a></li>
+      <li><a class="a-bar"href="#">Offerings</a></li>
+           
+          </ul>            
+            
+               
+      </div>    
+     
+   
+      <div class="home-header">
+        <div class="lpic">
+            <img src="pics/clonepage.png" class="imagehead">
+            
+        </div>
+
+
+        <div class="middle-section">
+          <div>
+           <a class="mid-h" href="booklay.html">Home</a> 
+          </div>      
+          
+          <div>
+           <a class="mid" href="library.html">Library</a> 
+          </div>        
+          
+          <div class="dropdown">
+           <a class="mid">About Us</a>
+           
+           <div class="dropdown-content">
+      <a class="link1" href="library.html">Books</a>
+      <a class="link2" href="profile.html">Profile</a>
+      <a class="link3" href="contactus.html">Contact</a>
+             </div>
+           
+          </div>
+                 
+        </div>
+        
+        
+    </div>
+    
+    <img class="baghome" src="pics/library.jpg">
+    
+
+
+<div class="main-con">
+    
+    <div class="left-div">
+        <h1>Book Borrowering System</h1>
+        <p class="p-head">Online Halo2</p>  
+    </div>
+    
+    <img class="imahe" src="pics/looplog.png">
+        
+
+        <div class="container">
+
+        <img class="user" src="pics/user2.png">
+
+        <form id="myForm">
+        <input type="text" id="name" placeholder="Name" required>
+
+        <select  id="selt" type="name" required>
+            <option disabled selected value hidden>Book Name</option>
+            <option >English</option>
+            <option >Health</option>
+            <option >History</option>
+            <option >Science</option>
+            <option >Math</option>
+        
+        </select>
+        
+        
+        <select  id="selt" type="name" required>
+            <option disabled selected value hidden>Borrower</option>
+            <option >Student</option>
+            <option>Faculty</option>
+            <option>Others</option>
+        
+        </select>
+        
+        <select  id="selt" type="name" required>
+            <option disabled selected value hidden>Purpose/Objective</option>
+            <option>Study</option>
+            <option>Research</option>
+            <option>Others</option>
+        </select>
+        
+        <p class="DBR">Date Borrowed</p>
+        <input type="date" id="dat" required>
+        
+        <p class="DBR">Date of Returning</p>
+        <input type="date" id="dat" required>
+        
+        <button type="submit" class="turn-in" required>Submit</button>
+        
+        <a class="TC">Terms and Conditions</a>
+        </form>
+
+        </div>     
+</div>
+
+
+<div class="visitcon">
+    <p class="visitp">Visit</p>
+
+    <div class="iconcon">
+    <img class="icon" src="pics/info.svg">
+    <img class="icon" src="pics/user.svg">
+    <img class="icon" src="pics/facebook.svg">
+    <img class="icon" src="pics/instagram.svg">
+    </div>
+
+    </div>
+
+
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <img src="pics/plog.png" class="plog">
+        <p class="bartur">Your request was successfully sent!</p>
+    </div>
+</div>
+
+<script src="JS/sidebar.js"></script>
+<script src="JS/pop.js"></script>
+
+</body>
+</html>

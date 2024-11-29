@@ -1,0 +1,413 @@
+body{
+  /* background-color: rgb(6, 6, 49); */
+  /* background-color: #EFF1F3; */
+  background-color: #395285;
+  margin: 0px;
+}
+
+/* BGHOME */
+
+.baghome {
+  background-image: url('pics/library.jpg');
+  background-size: cover; /* or contain, depending on your needs */
+  background-position: center; /* centers the background image */
+  height: 88vh; /* height of the container */
+  width: 100%; /* width of the container */
+  position: relative;
+  /* opacity: 0.4; */
+  
+}
+
+/* header 1 */
+
+.lpic {
+  background-color: #011a4b;
+  /* padding: 2px 10px; */
+  padding: 5px 55px;
+}
+
+.imagehead {
+  height: 60px;
+  width: 200px;
+  
+  margin-right: 10px;
+}
+
+.p-text {
+  font-size: 18px;
+  font-weight: 300;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-left: 10%;
+}
+
+/* header 2 */
+.home-header {
+  height: 70px;
+  display: flex;
+  background-color: #011a4b;
+  }
+
+.middle-section { 
+  display: flex;
+  align-items: center;
+  margin: auto;
+  background-color: #011a4b;
+  gap: 30px;
+  letter-spacing: 2px;
+  }
+
+
+.mid-h {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  letter-spacing: 2px;
+  /* color: #333; */
+  font-size: 1.2rem;
+  /* transition: color 0.3s ease; */
+}
+
+.mid {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  color: rgb(255, 172, 19);
+  cursor: pointer;
+  /* color: #333; */
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+  }
+
+.mid:hover, .mid:focus {
+color: white;
+transition: 0.5s;
+}  
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+    }
+  
+.dropdown-content {
+    margin-top: 0px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 0px 0px 0px
+    rgba(231, 228, 228, 0.863);
+    z-index: 5;
+    }
+  
+.dropdown-content .link1, .link2, .link3 {
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    }
+  
+.dropdown-content a:hover {
+    background-color: #e2e2e2;
+    }
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+    }  
+
+
+/* main container of form and left div */
+
+/* .main-con {
+  display: flex;
+  align-items: center;
+  gap: 150px; 
+ } */
+
+
+ 
+/* form */
+
+.left-div {
+  margin-left: 20px;
+  position: absolute;
+  top: 10%;
+  
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(0, 0, 87);
+  border: solid 2px rgb(248, 248, 248);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 0px;
+  background-color: #f8eebf;
+  opacity: 0.8;
+}
+
+.p-head {
+  font-size: 25px;
+  font-weight: 700;
+  color: rgb(0, 0, 87);
+  border: solid 2px rgb(248, 248, 248);
+  padding: 10px;
+  border-radius: 10px;
+  width: 55%;
+  margin-top: 8px;
+  background-color: #fff2b8;
+  opacity: 0.8;
+}
+
+.imahe {
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  background-color: whitesmoke;
+  border-radius: 50px;
+  opacity: 0.9;
+ }
+
+.DBR {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  margin-top: 0px;
+  color: #EFF1F3;
+  letter-spacing: 2px;
+  /* margin: 0px;
+  position: absolute;
+  top: 10px; */
+}
+
+.container {
+ padding: 20px 30px 25px;
+ background-color: #266CA9;
+ width: 25%;
+ height: 490px;
+ text-align: center;
+ border-radius: 10px;
+ margin-top: 20px;
+ position: absolute;
+ top: 80px;
+ right: 23%;
+ overflow-y: auto;  /* Enable vertical scrolling */
+ box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+ transition: transform 0.3s; /* Smooth scaling on hover */
+}
+
+.container:hover {
+  transform: scale(1.02); /* Slight scaling on hover */
+}
+
+/* SCROLL BAR STYLE */
+
+/* For WebKit browsers */
+.container::-webkit-scrollbar {
+  /* width: 10px;  */
+  /* Width of the scrollbar */
+  display: none; /* Hide scrollbar */
+}
+
+.container::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background of the scrollbar track */
+  border-radius: 5px; /* Rounded corners for the track */
+}
+
+.container::-webkit-scrollbar-thumb {
+  background: #007BFF; /* Color of the scrollbar thumb */
+  border-radius: 5px; /* Rounded corners for the thumb */
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+  background: #0056b3; /* Darker color on hover */
+}
+
+/* For Firefox */
+.container {
+  /* scrollbar-width: thin;  */
+  /* "auto" or "thin" */
+  scrollbar-width: none; /* "auto" or "thin" */
+  /* scrollbar-color: #007BFF #f1f1f1;  */
+  /* thumb color and track color */
+}
+
+/* For styling the scrollbar in other browsers */
+
+
+.user {
+  height: 120px;
+  width: 120px;
+  border-radius: 60px;
+}
+
+/* Form input styling */
+#name, #dat {
+  margin-bottom: 25px;
+  width: 90.5%;
+  background-color: whitesmoke;
+  border: 2px solid #007BFF; /* Blue border */
+  border-radius: 5px;
+  padding: 10px 15px; /* Consistent padding */
+  outline: none;
+  color: rgb(3, 3, 54);
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px; /* Slightly reduced letter-spacing */
+  transition: border-color 0.3s; /* Transition for border color */
+}
+
+#name:focus, #dat:focus {
+  border-color: #0056b3; /* Darker border on focus */
+}
+
+input::placeholder {
+  color: rgb(3, 3, 54); /* Keep placeholder text color */
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px; /* Slightly reduced letter-spacing */
+}
+
+#selt {
+  margin-bottom: 25px;
+  width: 100%;
+  background-color: whitesmoke;
+  /* height: 30px; */
+  border: 0;
+  border-radius: 5px;
+  padding: 13px;
+  outline: none;
+  color: rgb(3, 3, 54); 
+  font-size: 13px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  outline: none;
+  letter-spacing: 2px;
+  transition: border-color 0.3s; /* Transition for border color */
+}
+
+#selt:focus {
+  border-color: #0056b3; /* Darker border on focus */
+}
+
+
+
+input[type="date"]:focus {
+ border-color: #333; /* Change border color on focus */
+ outline: none; /* Remove outline */ 
+}
+
+
+select option {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  background-color: #ADE1FB;
+  letter-spacing: 2px;
+}
+
+.turn-in {
+  /* display: flex;
+  position: absolute; */
+  /* bottom: 18px; */
+  /* left: 46px; */
+  color: rgb(3, 3, 54);
+  font-size: 15px;
+  font-weight: 700;
+  width: 100%;
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  background-color: #007BFF; /* Button background color */
+  transition: background-color 0.3s, transform 0.3s; /* Transition effects */
+}
+
+.turn-in:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  color: white;
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.TC {
+  color: #FFFFFF; /* Bright blue color */
+  font-weight: bold; /* Bold text */
+  text-decoration: none; /* Remove underline */
+  cursor: pointer; /* Pointer cursor */
+  transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
+}
+
+.TC:hover {
+  color: #FFD700; /* Darker blue on hover */
+  text-decoration: underline; /* Underline on hover */
+}
+
+.popup-content {
+  border-radius: 20px;
+}
+
+.bartur {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  color: rgb(3, 3, 54);
+}
+
+
+/* icon */
+
+.visitcon {
+  position: absolute;
+  left: 20px;
+  bottom: 30px;
+  width: 220px;
+  background-color: #f8eebf;
+  border-radius: 40px;
+  opacity: 0.9;
+  border: solid 2px rgb(248, 248, 248);
+}
+
+.visitp {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 3px;
+  color: rgb(3, 3, 54);
+  margin-top: 2px;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.iconcon {
+  width: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 20px;
+}
+
+
+
+
+
+
+
+
